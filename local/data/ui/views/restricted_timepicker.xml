@@ -1,0 +1,12 @@
+<form stylesheet="restrict_timepicker.css">
+  <label>Restricted TimePicker</label>
+  <fieldset submitButton="false">
+    <input type="time" token="field1">
+      <label></label>
+      <default>
+        <earliest>0</earliest>
+        <latest></latest>
+      </default>
+    </input>
+  </fieldset>
+</form>

@@ -1,0 +1,28 @@
+ 
+/* OPTIONS
+div[id^='presets_view']
+div[id^='relative_view']
+div[id^='realtime_view']
+div[id^='daterange_view']
+div[id^='dateandtimerange_view']
+div[id^='advanced_view']
+*/
+ 
+div[id^='daterange_view'],
+div[id^='advanced_view'],
+div[id^='relative_view'],
+div[id^='realtime_view'] {
+	display: none;
+}
+
+/* Hide individual items 
+ */
+a[data-earliest="@w0"][data-latest="now"],
+a[data-earliest="@w1"][data-latest="now"],
+a[data-earliest="-7d@w0"][data-latest="@w0"],
+a[data-earliest="-6d@w1"][data-latest="-1d@w6"],
+a[data-earliest="-1mon@mon"][data-latest="@mon"],
+a[data-earliest="-15m"][data-latest="now"],
+a[data-earliest="-60m@m"][data-latest="now"] {
+	display: none;
+}
